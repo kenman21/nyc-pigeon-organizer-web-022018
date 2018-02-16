@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   data.each do |char, namesanddata|
     namesanddata.each do |data, names|
       names.each do |name|
-        if data_hash == {}
+        if data_hash == {} 
           data_hash = {name => {char => [data.to_s]}}
         elsif data_hash.keys.include?(name)
           if data_hash[name].keys.include?(char)
